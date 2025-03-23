@@ -1,18 +1,21 @@
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import React from 'react'
+import React from "react";
+import { useTheme } from "@/context/ThemeContext";
+import HeroSection from "./Components/HeroSection/HeroSection";
+import CardSection from "./Components/CardSection/CardSection";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 
 const Home: React.FC = () => {
   return (
-    <div className='flex flex-col items-center justify-center h-screen'>
-        <Header />
-        <div className='flex flex-col items-center justify-center h-screen'>
-            <h1>Home</h1>
-
-        </div>
-        <Footer />
+    <div className="">
+      <Header />
+      <div className="">
+        <HeroSection />
+        <CardSection />
+      </div>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
