@@ -77,7 +77,13 @@ export function Header({}: HeaderProps) {
                 theme === "dark" ? "text-blue-400" : "text-blue-600"
               }`}
             >
-              App
+              <div className=" h-[40px]">
+                <img
+                  src="logo.jpeg"
+                  alt="TeenPatti Master"
+                  className="w-full h-full"
+                />
+              </div>
             </Link>
           </div>
 
@@ -125,15 +131,15 @@ export function Header({}: HeaderProps) {
             >
               FAQ
             </Link>
-            <Button 
-              variant="primary" 
+            <Button
+              variant="primary"
               size="sm"
               className="shadow-sm hover:shadow-md transition-shadow duration-200"
             >
               Login
             </Button>
-            <button 
-              onClick={toggleTheme} 
+            <button
+              onClick={toggleTheme}
               className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
             >
               {theme === "dark" ? "🌞" : "🌙"}
@@ -202,7 +208,10 @@ export function Header({}: HeaderProps) {
               </svg>
             </button>
 
-            <div ref={menuItemsRef} className="px-4 space-y-4 relative z-[9999]">
+            <div
+              ref={menuItemsRef}
+              className="px-4 space-y-4 relative z-[9999]"
+            >
               <Link
                 href="/"
                 className={`block ${
@@ -245,8 +254,8 @@ export function Header({}: HeaderProps) {
               >
                 FAQ
               </Link>
-              <button 
-                onClick={toggleTheme} 
+              <button
+                onClick={toggleTheme}
                 className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
               >
                 {theme === "dark" ? "🌞" : "🌙"}

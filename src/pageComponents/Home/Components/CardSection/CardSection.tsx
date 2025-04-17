@@ -42,12 +42,12 @@ const CardSection: React.FC = () => {
         </h2>
         <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center p-8 bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
-            <div className="text-5xl mb-6">🏏</div>
+          <img src="/logo.jpeg" alt="TeenPatti Master" className="h-[50px] w-[50px] mx-auto mb-[20px]" />
             <h3 className="text-2xl font-semibold mb-4 text-white">
-              Multiple Sports
+              Teeen Patti Master
             </h3>
             <p className="text-gray-200">
-              Play fantasy cricket, football, kabaddi, and more!
+            Play Rummy, the most popular card game in India!!
             </p>
           </div>
           <div className="text-center p-8 bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
@@ -65,7 +65,7 @@ const CardSection: React.FC = () => {
               Easy to Play
             </h3>
             <p className="text-gray-200">
-              Simple interface and quick team selection
+            Simple interface and quick game setup
             </p>
           </div>
         </div>
