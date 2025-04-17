@@ -21,6 +21,12 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </div>
       <Footer />
+      <a href ="https://d3nkjlgjwt7x6o.cloudfront.net/cg/files/2zwnnkg7nwyo77zo2fm4yx9/Master_e658r.apk?ss=custom_default" target="_blank" className= "downloadButton">
+        <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+        Download App</a>
     </ThemeProvider>
   )
 } 
